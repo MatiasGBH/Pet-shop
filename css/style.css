@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap');
+*{
+    font-family: 'Arimo', sans-serif;
+}
 .top{
     background-color: #222;
     color: #f3f3f3;
