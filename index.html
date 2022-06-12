@@ -20,7 +20,7 @@
     <header>
         <img src="img/Logo (1).png" alt="logo petshop">
         <div>
-            <a href="#"><img src="img/pawprint 1.png" alt="Patitas"> Categoría</a>
+            <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Categoría</a>
             <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Contactenos</a>
             <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Pets</a>
             <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Nosotros</a>
@@ -28,43 +28,70 @@
     </header>
     <main>
         <section class="banner">
-            <h1>¡Es un placer tenerte aquí!</h1>
-            <div class="comedero">
-                <h4>¡Comederos en descuento!</h4>
-                <button>Comederos</button>
+            <div class="texto">
+                <h1>¡Es un placer tenerte aquí!</h1>
+                <div class="comedero">
+                    <h4>¡Comederos en descuento!</h4>
+                    <button>Comederos</button>
+                </div>
             </div>
-        </section>
+        </section> <br><br>
+        <img src="img/pawprint orange.png" alt="Patita" class="patita">
         <section class="productos">
-            <img src="img/pawprint orange.png" alt="Patita">
-            <h2>Productos destacados</h2>
-            <a href="#">Comederos</a>
-            <a href="#">Accesorios</a>
-            <a href="#">comida</a>
+            <div class="enlaces">
+                <h2>Productos destacados</h2>
+                <a href="#">Comederos</a>
+                <a href="#">Accesorios</a>
+                <a href="#">comida</a>
+            </div>
             <section class="juguete">
-                <article><img src="img/churrasquito.png" alt="juguete"><br> Juguete Churrasquito <br>
-                    <p>$150</p>
+                <article class="producto"><img src="img/churrasquito.png" alt="juguete">
+                    <div>
+                        <p>Juguete Churrasquito
+                        <p>
+                        <p class="dorado">$150</p>
+                    </div>
                 </article>
-                <article><img src="img/comedero.png" alt="juguete"><br> Comedero de perro <br>
-                    <p>$150</p>
+                <article class="producto"><img src="img/comedero.png" alt="juguete">
+                    <div>
+                        <p>Comedero de perro
+                        <p>
+                        <p class="dorado">$250</p>
+                    </div>
                 </article>
-                <article><img src="img/Huesito.png" alt="juguete"><br> Juguete Huesito <br>
-                    <p>$150</p>
+                <article class="producto"><img src="img/Huesito.png" alt="juguete">
+                    <div>
+                        <p>Juguete Huesito
+                        <p>
+                        <p class="dorado">$650</p>
+                    </div>
                 </article>
             </section>
+        </section>
+        <section class="formulario">
+            <form action=""><label>Contáctanos</label>
+                <input type="text" placeholder="Nombre y Apellido">
+                <input type="text" placeholder="Ingresa tu correo electrónico">
+                <input type="text" placeholder="Teléfono">
+                <div class="botones">
+                    <button class="b1">Resetear</button>
+                    <button class="b2">Enviar</button>
+                </div>
+            </form>
         </section>
         <section>
             <article>
                 <div class="suscripcion">
-                    <div class="mensaje">
+                    <div class="suscribite">
                         <img src="img/enviar-correo 1.png" alt="Contactanos">
-                        <p>Suscribete para más información</p>
                     </div>
+                    <p>Suscribete para más información</p>
                     <div class="contacto">
-                        <input type="text"> <button>Suscribete</button>
+                        <input type="text" value="Dejanos tu correo"> <button>Suscribete</button>
                     </div>
                 </div>
                 <div class="footer">
-                    <div class="contactos">
+                    <div class="container">
                         <article>
                             <img src="img/ubicacion.png" alt="ubicacion">
                             <div>
@@ -95,11 +122,10 @@
                 </div>
             </article>
         </section>
-        <footer>
+    </main>
+    <footer>
         <p>Todos los derechos reservados Front End</p>
     </footer>
-    </main>
-    
 </body>
 
 </html>
