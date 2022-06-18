@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet-shop</title>
+    <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,10 +21,12 @@
     <header>
         <img src="img/Logo (1).png" alt="logo petshop">
         <div>
-            <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Categoría</a>
-            <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Contactenos</a>
-            <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Pets</a>
-            <a href="#"><img src="img/pawprint 1.png" alt="Patitas">Nosotros</a>
+            <ul>
+                <li><a href="#"><img src="img/pawprint 1.png" alt="Patitas"> Categoría</a></li>
+                <li><a href="#"><img src="img/pawprint 1.png" alt="Patitas"> Contactenos</a></li>
+                <li><a href="#"><img src="img/pawprint 1.png" alt="Patitas"> Pets</a></li>
+                <li><a href="#"><img src="img/pawprint 1.png" alt="Patitas"> Nosotros</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -45,21 +48,21 @@
                 <a href="#">comida</a>
             </div>
             <section class="juguete">
-                <article class="producto"><img src="img/churrasquito.png" alt="juguete">
+                <article><img src="img/churrasquito.png" alt="juguete">
                     <div>
                         <p>Juguete Churrasquito
                         <p>
                         <p class="dorado">$150</p>
                     </div>
                 </article>
-                <article class="producto"><img src="img/comedero.png" alt="juguete">
+                <article><img src="img/comedero.png" alt="juguete">
                     <div>
-                        <p>Comedero de perro
+                        <p>Comeder para perros
                         <p>
                         <p class="dorado">$250</p>
                     </div>
                 </article>
-                <article class="producto"><img src="img/Huesito.png" alt="juguete">
+                <article><img src="img/Huesito.png" alt="juguete">
                     <div>
                         <p>Juguete Huesito
                         <p>
@@ -79,52 +82,32 @@
                 </div>
             </form>
         </section>
-        <section>
-            <article>
-                <div class="suscripcion">
-                    <div class="suscribite">
-                        <img src="img/enviar-correo 1.png" alt="Contactanos">
-                    </div>
-                    <p>Suscribete para más información</p>
-                    <div class="contacto">
-                        <input type="text" value="Dejanos tu correo"> <button>Suscribete</button>
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="container">
-                        <article>
-                            <img src="img/ubicacion.png" alt="ubicacion">
-                            <div>
-                                <p>Localidad</p>
-                                <p>Paysandú Uruguay</p>
-                            </div>
-                        </article>
-                        <br>
-                        <article>
-                            <img src="img/telefono.png" alt="telefono">
-                            <div>
-                                <p>Teléfono</p>
-                                <p>0800-Batman</p>
-                            </div>
-                        </article>
-                        <br>
-                        <article>
-                            <img src="img/correo.png" alt="correo">
-                            <div>
-                                <p>Correo electrónico</p>
-                                <p>batman@gmail.com</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="logo">
-                        <img src="img/Logo2.png" alt="Logo petjob">
-                    </div>
-                </div>
-            </article>
+        <section class="suscripcion">
+            <div class="invitacion"><img src="img/enviar-correo 1.png" alt="mensaje">
+                <p>Suscríbete para más novedades</p>
+            </div>
+            <div class="correo"><input type="text" placeholder="Ingresa tu correo electrónico"> <button><a
+                        href="#">Suscribirme</a></button></div>
         </section>
     </main>
     <footer>
-        <p>Todos los derechos reservados Front End</p>
+        <section class="datos">
+            <article class="contacto">
+                <div><img src="img/ubicacion.png" alt="ubicacion">
+                    <p><span>localidad</span><br>calle provincia</p>
+                </div>
+                <div><img src="img/telefono.png" alt="telefono">
+                    <p><span>telefono</span><br>0800-batman</p>
+                </div>
+                <div><img src="img/correo.png" alt="correo">
+                    <p><span>Correo</span><br>dirección de correo</p>
+                </div>
+            </article>
+            <article><img src="img/Logo2.png" alt="logo"></article>
+        </section>
+        <section class="empresa">
+            <p>Todos los derechos reservados Front End</p>
+        </section>
     </footer>
 </body>
 

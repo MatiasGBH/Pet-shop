@@ -15,6 +15,7 @@ body a {
     text-decoration: none;
 }
 
+/*nav top*/
 .top {
     display: flex;
     justify-content: space-between;
@@ -25,7 +26,14 @@ body a {
     align-items: center;
     color: white;
 }
+.top ul li{
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    
+}
 
+/*estilos del header*/
 header {
     background: #F0A83E;
     display: flex;
@@ -41,8 +49,15 @@ header div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 5px;
+}
+header div ul{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
+/*estilos del baner*/
 .banner {
     display: flex;
     justify-content: flex-end;
@@ -60,7 +75,8 @@ header div {
     text-align: center;
     color: #3C2313;
 }
-.texto h1{
+
+.texto h1 {
     background-color: #fff;
     border-radius: 5px;
     height: 54px;
@@ -68,7 +84,8 @@ header div {
     line-height: 2;
     padding: 0px 10px 0px 10px;
 }
-.comedero button{
+
+.comedero button {
     background-color: #F0A83E;
     width: 141px;
     height: 49px;
@@ -79,17 +96,15 @@ header div {
     border-radius: 5px;
 }
 
+/*imagen de patita en el medio*/
+.patita {
+    width: 67px;
+}
+
+/*enlaces de productos*/
 .productos {
     display: flex;
     flex-direction: column;
-    background: #FBFAF6;
-}
-.dorado{
-    color: #F0A83E;
-    font-size: 15px;
-}
-.patita {
-    width: 67px;
 }
 
 .enlaces a {
@@ -97,6 +112,7 @@ header div {
     text-decoration: underline;
 }
 
+/*tarjetas de catalogo de juguetes*/
 .juguete {
     display: flex;
     flex-direction: row;
@@ -108,28 +124,42 @@ header div {
     margin-bottom: 2rem;
 }
 
+.dorado {
+    color: #F0A83E;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 .juguete article {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: #FBFAF6;
+    margin: .25rem;
+    box-shadow: 0px 4px 4px rgb(70, 68, 68);
 }
-.formulario label{
-line-height: 3;
-color: #3C2313;
-font-size: 25px;
-font-weight: 700;
+
+/*formulario principal*/
+.formulario label {
+    line-height: 3;
+    color: #3C2313;
+    font-size: 25px;
+    font-weight: 700;
 }
-.formulario form{
+
+.formulario form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
 }
-form button{
+
+form button {
     margin-bottom: 5px;
 }
-form input{
+
+form input {
     margin-bottom: 5px;
     background-color: #3C2313;
     border-radius: 10px;
@@ -137,73 +167,124 @@ form input{
     width: 340px;
     padding-left: 15px;
 }
-.botones{
+
+.botones {
     display: flex;
     flex-direction: row;
     width: 235px;
     justify-content: space-around;
 }
-.botones button{
+
+.botones button {
     width: 110px;
     height: 34px;
     border-radius: 15px;
     color: white;
     border: none;
     margin-top: 1rem;
+    font-size: 15px;
 }
-.b1{
+
+.b1 {
     background-color: #8a8787;
 }
-.b2{
+
+.b2 {
     background-color: #F0A83E;
 }
+
+/*invitación a suscripción*/
 .suscripcion {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.invitacion {
+    display: flex;
+    justify-content: space-around;
+    width: 370px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.correo input {
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    width: 250px;
+}
+
+.correo button {
+    height: 35px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #3C2313;
+    color: white;
+}
+
+/*estilos del footer y datos de la empresa*/
+.datos {
+    background-color: #3C2313;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    background-color: #F0A83E;
-    box-sizing: border-box;
-    position: relative;
-    height: 60px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.empresa {
+    background-color: #222;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
 }
 
 .contacto {
-    position: absolute;
-    right: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
 }
 
-.suscribite {
-    position: absolute;
-    left: 10%;
-}
-
-.suscripcion p {
-    position: absolute;
-    left: 15%;
-}
-
-.footer {
+.contacto div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3C2313;
-    box-sizing: border-box;
-    padding: 20px;
+    justify-content: space-around;
+    margin: 10px;
 }
 
-.container article{
-    display: flex;
-    margin-left: 30px;
-    width: 250px;
-    justify-content: space-between;
+.contacto div p {
     color: white;
 }
-footer{
-    background-color: #222;
-    color: white;
-    line-height: 3;
+
+p span {
+    font-weight: 700;
+    text-transform: uppercase;
 }
-footer p{
-    margin: 0;
+
+@media (min-width: 0px) and (max-width: 769px) {
+    .top{
+        display: none;
+    }
+    .suscripcion{
+        flex-direction: column;
+    }
+    .datos{
+        flex-direction: column;
+    }
+    .botones{
+        width: 100vw;
+    }
+    .botones button{
+        width: 30vw;
+        height: 8vh;
+        font-size: 20px;
+    }
 }
