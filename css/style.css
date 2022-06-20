@@ -21,7 +21,7 @@ body a {
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    padding: 8px 15px 8px 15px;
+    padding: 0px 25px 0px 25px;
     background-color: #222;
     align-items: center;
     color: white;
@@ -237,7 +237,9 @@ form input {
     padding: 20px;
     flex-wrap: wrap;
 }
-
+.datos img{
+    margin:0;
+}
 .empresa {
     background-color: #222;
     display: flex;
@@ -262,6 +264,7 @@ form input {
 
 .contacto div p {
     color: white;
+    width: 137px;
 }
 
 p span {
@@ -279,6 +282,10 @@ p span {
     .datos{
         flex-direction: column;
     }
+    .datos .logo{
+        margin:2rem .5rem 1rem .5rem;
+    }
+    
     .botones{
         width: 100vw;
     }
