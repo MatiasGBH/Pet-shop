@@ -136,7 +136,8 @@ header div ul{
     justify-content: center;
     background: #FBFAF6;
     margin: .25rem;
-    box-shadow: 0px 4px 4px rgb(70, 68, 68);
+    box-shadow: 0px 4px 4px orange, 0px 4px 4px rgb(70 68 68);
+    border-radius: 15px;
 }
 
 /*formulario principal*/
