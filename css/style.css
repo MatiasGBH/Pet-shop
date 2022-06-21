@@ -47,7 +47,6 @@ header {
 header div {
     width: 400px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     margin: 5px;
 }
@@ -73,6 +72,9 @@ header div ul{
 
 .texto {
     text-align: center;
+    color: #3C2313;
+}
+.texto h4{
     color: #3C2313;
 }
 
@@ -206,10 +208,12 @@ form input {
 
 .invitacion {
     display: flex;
-    justify-content: space-around;
-    width: 370px;
+    justify-content: space-between;
+    width: 340px;
     color: white;
     font-weight: 700;
+}
+.invitacion p{
     font-size: 20px;
 }
 
@@ -276,6 +280,9 @@ p span {
 @media (min-width: 0px) and (max-width: 769px) {
     .top{
         display: none;
+    }
+    header div{
+        width: 100%;
     }
     .suscripcion{
         flex-direction: column;
