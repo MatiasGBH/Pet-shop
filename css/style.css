@@ -26,34 +26,48 @@ body a {
     align-items: center;
     color: white;
 }
-.top ul li{
-    list-style: none;
-    margin: 10px;
-    display: flex;
-    
+.top select{
+    background: none;
+    border: 0;
+    color: white;
+}
+.top select option{
+    color: black;
 }
 
 /*estilos del header*/
 header {
     background: #F0A83E;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
     flex-wrap: wrap;
+    position: relative;
 }
 
-header div {
+header nav {
     width: 400px;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
 }
-header div ul{
+
+header nav ul{
     list-style: none;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    margin-top: 12px;
+    gap: 8px;
+}
+header form{
+    display: none;
+}
+
+header select{
+    background: none;
+    border: 0;
 }
 
 /*estilos del baner*/
@@ -239,7 +253,7 @@ form input {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 35px;
     flex-wrap: wrap;
 }
 .datos img{
@@ -257,7 +271,7 @@ form input {
 .contacto {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 245px;
 }
 
 .contacto div {
@@ -265,6 +279,7 @@ form input {
     flex-direction: row;
     justify-content: space-around;
     margin: 10px;
+    text-align: initial;
 }
 
 .contacto div p {
@@ -281,9 +296,23 @@ p span {
     .top{
         display: none;
     }
-    header div{
-        width: 100%;
+    header{
+        flex-direction: column;
+        justify-content: center;
     }
+    header nav{
+        width: fit-content;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    header form{
+        display: flex;
+        margin-top: 12px;
+    }
+    
     .suscripcion{
         flex-direction: column;
     }
