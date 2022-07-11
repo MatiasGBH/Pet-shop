@@ -16,6 +16,9 @@ section.ofert{
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    @media (max-width:769px){
+        @include fuera
+    }
     select{
         border: 0;
         background-color: $bg-negro;
@@ -48,9 +51,12 @@ header{
     }
     nav{
         width: 340px;
+        @media (max-width:768px){
+            @include fuera
+        }
         ul{
             display: grid;
-            grid-template-columns: 25% 15% 25% 25%;
+            grid-template-columns: 28% 17% 25% 25%;
             list-style: none;
             color: $color-font;
             padding: 0;
@@ -96,6 +102,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         margin-top: 2rem;
         img.patita{
             width: 70px;
@@ -155,7 +162,7 @@ main{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                height: 30vh;
+                height: 250px;
                 justify-content: space-around;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
@@ -202,6 +209,9 @@ main{
             flex-wrap: wrap;
             padding: 1rem 2rem;
             align-items: center;
+            @media (max-width:768px) {
+                @include column
+            }
             div{
                 display: flex;
                 justify-content: space-between;
@@ -239,6 +249,9 @@ footer{
         align-items: center;
         flex-wrap: wrap;
         padding: 1.5rem 3rem;
+        @media (max-width:768px) {
+            flex-direction: column-reverse;
+        }
         div{
             display: grid;
             grid-template-columns: 30% 70%;

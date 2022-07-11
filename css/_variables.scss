@@ -4,3 +4,11 @@ $color-secundario: rgba(240, 168, 62, 1);
 $color-font: rgb(255,255,255);
 $bg-carta: rgb(251, 250, 246);
 $gris-oscuro:rgb(138, 135, 135);
+
+@mixin fuera {
+    display: none;
+}
+
+@mixin column {
+    flex-direction: column;
+}
