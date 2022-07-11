@@ -51,8 +51,26 @@ header{
     }
     nav{
         width: 340px;
-        @media (max-width:768px){
-            @include fuera
+        @media(max-width:768px){
+            width: fit-content;
+        }
+        label, input{
+            display: none;
+        }
+        label{
+            @media (max-width:768px) {
+                display: initial;
+            }
+        }
+        input:checked + ul{
+            display: block;
+            flex-direction: column;
+            position: absolute;
+            right: 30px;
+            background-color: $primario-marron;
+            padding: 10px;
+            border-radius: 1rem;
+            text-align: end;
         }
         ul{
             display: grid;
@@ -60,9 +78,22 @@ header{
             list-style: none;
             color: $color-font;
             padding: 0;
-            cursor: pointer;
-            li:before{
-                content:url(../img/pawprint\ 1.svg)
+            @media (max-width:768px){
+                @include fuera
+            }
+            li{
+                cursor: pointer;
+                &:before{
+                    content:url(../img/pawprint\ 1.svg)
+                }
+                @media (max-width:768px){
+                    &::before{
+                        display: none;
+                    }
+                    &::after{
+                        content: url(../img/pawprint\ 1.png);
+                    }
+                }
             }
         }
     }
